@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classroom | Introduction to creating websites and storing data</title>
+  </head>
+  <body>
+    <h1>Introduction to creating websites and storing data</h1>
+    <h2>Chapters</h2>
+    <a href="#html-intro">HTML intro</a>
+    <a href="#json-intro"JSON intro></a>
+    <div id="html-intro">
+      <h2>Hypertext Markup Languge</h2>
+      <p>HTML is constructed like this:</p>
+      <pre>
+&lt;<i>elementname</i>&gt;<i>content</i>&lt;/<i>elementname</i>&gt;
+      </pre>
+      <p>See <a href="https://www.w3schools.com/html/default.asp">HTML intro</a></p>
+    </div>
+    <div id="json-intro">
+      <h2>JavaScript Object Notation</h2>
+      <p>JSON can let you store data like this:</p>
+      <pre>
+{"languges":[
+  {
+    "name":"HTML",
+    "file-extiostions":[
+      ".html",
+      ".htm",
+      ".inc",
+      ".xht",
+      ".xhtml"
+    ]
+  },
+  {
+    "name":"CSS"
+    "file-extiostions": [
+      ".css"
+    ]
+  }
+]}
+      </pre>
+      <p>Then, you can <code>JSON.parse()</code> the result. In the code above, the possible code results are:</p>
+      <ul>
+        <li><i>varname</i>.languges[0] results in [object Object]</li>
+        <li><i>varname</i>.languges[0].file-extiostions results in .html,.htm,.inc,.xht,.xhtml</li>
+        <li><i>varname</i>.languges[2] results in undefined</li>
+      </ul>
+      <p>Learn more <a href="https://www.w3schools.com/js/js_json_intro.asp">right here</a></p>
+    </div>
+  </body>
+</html>
