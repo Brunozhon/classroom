@@ -1,0 +1,16 @@
+{
+  "workers":[
+    {
+      "name":"Aloford Jackson",
+      "age":32
+    },
+    {
+      "name":"Butterlleeson Eeeleee",
+      "age":18
+    },
+    {
+      "name":"Doge Loser",
+      "age":40
+    }
+  ]
+}
