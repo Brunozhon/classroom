@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Get some action into your project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  </head>
+  <body>
+    <script>
+      var app = angular.module("app", []);
+      app.controller("basicEx", function($scope) {
+        $scope.name = "John Doe"
+      });
+      app.controller("attrBasicEx", function($scope) {
+        $scope.color = "black"
+      });
+    </script>
+    <div ng-app="app">
+      <h1>AngularJS</h1>
+      <p>AngularJS is the recommended libary for JavaScript. It can change data:</p>
+      <div ng-controller="basicEx">
+        <input ng-model="name" />
+        <p>Hello {{name}}! Ready to learn AngularJS?</p>
+      </div>
+      <p>AngularJS can even change attributes:</p>
+      <div ng-controller="attrBasicEx">
+        <input ng-model="color" />
+        <p style="color: {{color}}">Some text... some text...</p>
+      </div>
+    </div>
+  </body>
+</html>
